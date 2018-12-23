@@ -1,11 +1,11 @@
 {
   "name": "lpui",
-  "description": "A Vue.js project",
-  "version": "1.0.0",
+  "description": "lpui",
+  "version": "1.0.9",
   "author": "liaopeng541 <36416976@qq.com>",
   "license": "MIT",
   "private": false,
-  "main": "dist/Lpspin.js",
+  "main": "dist/lpui.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"

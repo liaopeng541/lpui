@@ -2,12 +2,12 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: process.env.NODE_ENV == 'development' ? './src/main.js' : './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'LPspin.js',
-      library: 'LPspin',
+    filename: 'lpui.js',
+      library: 'lpui',
       libraryTarget: 'umd',
       umdNamedDefine: true
   },
