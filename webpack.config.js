@@ -6,8 +6,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'lpui.js',
-      library: 'lpui',
+    filename: process.env.NODE_ENV == 'development' ? 'build.js':'Lpui.js',
+      library: 'Lpui',
       libraryTarget: 'umd',
       umdNamedDefine: true
   },
@@ -39,7 +39,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+         // exclude: /node_modules/
       },
       {
         test: /\.(png|jpg|gif|svg)$/,

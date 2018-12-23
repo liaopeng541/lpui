@@ -3,9 +3,9 @@
  */
 'use strict'
 import querystring from 'query-string';
-let request={}
+var request={}
 function buildrequest(url,params,overtime=0,type="GET",contentType="form",useCookie=false){
-    let header={
+    var header={
         method: type,
         headers: {
             'Accept':'application/json',

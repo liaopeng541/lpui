@@ -238,6 +238,8 @@
                         this.timer=setTimeout(this.fetchData,250)
                         this.inputvalue="";
                     }
+                }else{
+                    this.value&&this.$emit("enter",this.selectedRow)
                 }
             },
             keyaction(e)

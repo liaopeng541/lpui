@@ -40,6 +40,7 @@
                 width="800"
                 @change="changeval"
                 @error="error"
+                @enter="enter"
                 placeholder="请选择"
 
         />
@@ -94,6 +95,10 @@ export default {
     }
   },
     methods:{
+        enter(val)
+        {
+            console.log(val)
+        },
         error()
         {
           console.log("出错啦")
